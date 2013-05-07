@@ -46,6 +46,7 @@ $(function(){
 	
 	$("#btn").on("click",function(){
 		$("#listcontainer").hide('slide', {direction: 'left'}, 1000);
+		$(".wait").fadeIn(1200);
 		var search = $.trim($("#search").val()).toLowerCase();
 		var loc = $.trim($("#location").val()).toLowerCase();
 		var radius = $("#radius").val();
@@ -72,6 +73,7 @@ $(function(){
 					$("#tweets").html(buildList(out.wts));
 					
 					$("#avgsentiment").html(getSentimentString(avgSentiment));
+					$(".wait").fadeOut();
 					$("#listcontainer").show('slide', {direction: 'left'}, 1000);
 				}
 			});
@@ -81,6 +83,7 @@ $(function(){
 	
 	$('document').ready(function(){
 		$("#listcontainer").hide();
+		$(".wait").hide();
 	});
 	
 });
