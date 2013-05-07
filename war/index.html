@@ -1,0 +1,115 @@
+<html>
+
+<head>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css"
+	href="css/bootstrap-responsive.min.css"></link>
+<link rel="stylesheet" type="text/css" href="css/main.css"></link>
+
+
+<script>
+	
+</script>
+<title>twizzer</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="navbar navbar-inverse">
+			<div class="navbar-inner">
+				<a class="brand" href="#">twizzer</a>
+				<ul class="nav">
+					<li class="" id="bydate"><a href="#_">Latest Buzzes</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div class="container-fluid">
+			<div class="row-fluid">
+
+				<div id="userinput" class="span4">
+					<form id="inputform">
+						<table class="table-striped">
+							<tr>
+								<td><label for="location">Location</label></td>
+								<td><input type="text" name="location" id="location"></input></td>
+							</tr>
+							<tr>
+								<td><label for="radius">Radius</label></td>
+								<td><select name="radius" id="radius">
+									<option value="1">1 mile</option>
+									<option value="2">2 mile</option>
+									<option value="3">3 mile</option>
+									<option value="4">4 mile</option>
+									<option value="5">5 mile</option>
+									<option value="6">6 mile</option>
+									<option value="7">7 mile</option>
+									<option value="8">8 mile</option>
+									<option value="9">9 mile</option>
+									<option value="10" selected>10 mile</option>
+								</select></td>
+							</tr>
+							<tr>
+								<td><label for="search">Buzzword</label></td>
+								<td><input type="text" name="search" id="search"></input></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><input type="button" class="btn" id="btn"
+									value="Analyze!"></input></td>
+							</tr>
+						</table>
+				</form>
+
+				</div>
+				
+				
+				<div id="listcontainer" class="span7 offset1">
+					
+					<h2 id="avgsentiment"></h2>
+					
+					<table class="table">
+						<tr>
+							<td class="lbldate">Date</td>
+							<td class="dateval"></td>
+						</tr>
+						<tr>
+							<td class="lblloc">Location</td>
+							<td class="locval"></td>
+						</tr>
+						<tr>
+							<td class="lblrad">Radius</td>
+							<td class="radval"></td>
+						</tr>
+						<tr>
+							<td class="lblsearch">Search</td>
+							<td class="searchval"></td>
+						</tr>
+					</table>
+					
+					<ul id="tweets">
+						
+					</ul>
+				
+				</div>
+				
+				<div id="temp">
+					<p id="test">
+						
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

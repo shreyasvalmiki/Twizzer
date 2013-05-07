@@ -1,0 +1,36 @@
+.vidListItem {
+	display:block;
+}
+#vidPlayContainer{
+	margin:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+#upload{
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#star{
+	padding-top:7px;
+}
+.paginate{
+	float:right;
+}
+.thumbHolder{
+	border-radius:10px;
+}
+#vidList,.vidListItem{
+	width:200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.listContainer{
+	background:#f0f0f0;
+}
+.delPlay{
+	float:right;
+}
+body{
+	background:#f9f9f9;
+}
